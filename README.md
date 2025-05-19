@@ -20,3 +20,5 @@ Follow the steps below:
    ```bash
    git clone git@github.com:emilyaraniva/FInalINST377.git
    cd FInalINST377
+2. Run all Necessary Steps using NODE.js
+3. All files should appear, and you should be able to use the application!
