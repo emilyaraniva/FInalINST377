@@ -127,3 +127,10 @@ Example: Error: {error message from API}
 Fetch Errors: Occasionally, the app may fail to fetch data if there are network issues or if the API is temporarily unavailable.
 
 Responsive Issues: The app may not display perfectly on smaller screen sizes for certain components, particularly in older browsers.
+
+
+
+##  Developer Manual
+
+You can view the full Developer Manual here:  
+👉 [docs/developer-manual.md](docs/developer-manual.md)
