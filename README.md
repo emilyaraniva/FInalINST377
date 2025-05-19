@@ -18,5 +18,5 @@ Follow the steps below:
 
    First, clone the repository from GitHub. Run this command in your terminal:
    ```bash
-   git clone 
-   cd 
+   git clone git@github.com:emilyaraniva/FInalINST377.git
+   cd FInalINST377
