@@ -133,4 +133,4 @@ Responsive Issues: The app may not display perfectly on smaller screen sizes for
 ##  Developer Manual
 
 You can view the full Developer Manual here:  
-👉 [docs/developer-manual.md](docs/developer-manual.md)
+👉 [developer-manual.md](developer-manual.md)
