@@ -27,11 +27,11 @@ Follow the steps below:
    4. API Documentation
 This section provides an overview of the APIs used in this application, including how to interact with the external API, how it works within the project, and how to troubleshoot common issues.
 
-External API - Song.Link API
+# External API - Song.Link API
 
 Base URL: https://api.song.link/v1-alpha.1/
 
-API Request
+# API Request
 The application makes a GET request to the song.link API to fetch song data from music platforms (e.g., Spotify, Apple Music). The request includes the following parameters:
 
 url: The music URL (e.g., a Spotify, Apple Music, or other music platform URL).
@@ -40,9 +40,8 @@ userCountry: The country code (e.g., 'US') to adjust the available links based o
 
 songIfSingle: A boolean flag (true or false) that tells the API to return song data even if the link corresponds to a single song (as opposed to an album or playlist).
 
-Request Example
+# Request Example
 Here’s an example of the GET request made by the application:
-
 
 const response = await fetch(`https://api.song.link/v1-alpha.1/links?url=${encodedUrl}&userCountry=US&songIfSingle=true`);
 Where:
@@ -53,13 +52,13 @@ userCountry: A country code (US by default).
 
 songIfSingle: true (If you want to include single tracks).
 
-Example Request URL:
+# Example Request URL:
 
 GET https://api.song.link/v1-alpha.1/links?url=https://spotify.com/...&userCountry=US&songIfSingle=true
 API Response
 The API responds with a JSON object containing song details and platform links.
 
-Example Response:
+# Example Response:
 
 {
   "entitiesByUniqueId": {
@@ -87,7 +86,7 @@ linksByPlatform: Contains the available music platform links (e.g., Spotify, App
 
 entityUniqueId: A unique identifier for the song or album.
 
-API Integration in the Application
+# API Integration in the Application
 The application uses the above API to fetch song data whenever a user submits a URL. The user-provided URL is passed to the API, which returns the song’s details and available listening links. This data is then displayed dynamically on the webpage.
 
 Here's a summary of the integration flow:
@@ -98,7 +97,7 @@ API Call: The frontend sends a GET request to the song.link API.
 
 Display Result: The response is parsed, and the song’s title, artist, album art, and links are displayed to the user.
 
-Example of how the data is displayed:
+# Example of how the data is displayed:
 
 resultContainer.innerHTML = `
   <h2>${songInfo.title} – ${songInfo.artistName}</h2>
@@ -110,7 +109,8 @@ resultContainer.innerHTML = `
     ).join('')}
   </ul>
 `;
-Error Handling and Common Issues
+
+# Error Handling and Common Issues
 Invalid URL: If the user submits an invalid URL, the form will show a message asking the user to provide a valid URL.
 
 Message: Please enter a valid URL.
@@ -123,7 +123,7 @@ API Error Response: If the API returns an error (e.g., song not found), the appl
 
 Example: Error: {error message from API}
 
-Known Bugs
+# Known Bugs
 Fetch Errors: Occasionally, the app may fail to fetch data if there are network issues or if the API is temporarily unavailable.
 
 Responsive Issues: The app may not display perfectly on smaller screen sizes for certain components, particularly in older browsers.
