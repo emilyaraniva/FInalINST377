@@ -29,7 +29,7 @@ This section provides an overview of the APIs used in this application, includin
 
 # External API - Song.Link API
 
-Base URL: https://api.song.link/v1-alpha.1/
+Base URL: https://linktree.notion.site/API-d0ebe08a5e304a55928405eb682f6741
 
 # API Request
 The application makes a GET request to the song.link API to fetch song data from music platforms (e.g., Spotify, Apple Music). The request includes the following parameters:
